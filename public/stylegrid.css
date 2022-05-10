@@ -1,0 +1,265 @@
+:root{
+    --main-radius:5px;
+    --main-padding:5px;
+    --blue:#1e90ff;
+    --white:#ffff;
+    --yellowish:#F7C600;
+    --looksred:rgb(238, 115, 125);
+    --looksgreen:rgb(208, 240, 208);
+    --lookspurple:rgb(240, 70, 240);
+}
+
+.container{
+display:grid;
+height:550vh;
+grid-gap:5px;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 0.05fr 0.05fr 1fr 1fr 0.2fr 0.4fr 0.4fr 0.2fr 0.8fr 1fr 0.05fr;
+grid-template-areas: "nav nav nav"
+"name name name"
+"image landing_page landing_page"
+"education1 education2 education3"
+"skill_title skill_title skill_title"
+"skillset1 skillset2 skillset3"
+"skillset4 skillset5 skillset6"
+"pro_title pro_title pro_title"
+"project1 project2 project3"
+"experience experience experience"
+"footer footer footer";
+}
+
+img{
+    position:absolute;
+    height:500px;
+    width:400px;
+    border-radius: 210px;
+    left:50px;
+    top:150px;
+}
+#name{
+    font-size: xx-large;
+    background-color:var(--looksgreen);
+    grid-area:name;
+    position:relative;
+}
+#skill_title{
+    font-size: xx-large;
+    background-color:var(--looksgreen);
+    grid-area:skill_title;
+    left: 0px;
+    position:relative;
+
+}
+.topnav{
+    color:#0d1b63;
+    text-align: right;
+    text-decoration: none;
+    padding:5px;
+    font-size: medium;
+font-family: "Arial";
+font-weight: 600;
+}
+
+nav{
+    background-color:var(--looksgreen);
+    grid-area:nav;
+}
+
+#landing_page{
+    background-color: var(--looksgreen);
+    grid-area: landing_page;
+    text-align: justify;
+    justify-content: center;
+    position: relative;
+    padding: 11rem;
+    font-size: larger;
+}
+#edu_title{
+    font-size: xx-large;
+    text-align: left;
+    top: 20px;
+    left: 23px;
+    position: relative;
+}
+.textclass{
+font-size:20px;
+font-weight:bolder;
+text-align: center;
+}
+.eduDiv{
+    margin:10px;
+    padding:10px;
+    display:inline-block;
+    background-color:#e5f5f6;;
+    height:400px;
+    width:330px;
+    left:20px;
+    vertical-align: top;
+    position: relative;
+    top: 150px;
+    border-radius:10px;
+}
+#education1{
+    background-color:var(--looksgreen);
+    grid-area:education1;
+    background-color:var(--looksgreen);
+}
+
+#education2{
+    background-color:var(--looksgreen);
+    grid-area:education2;
+}
+#education3{
+    background-color:var(--looksgreen);
+    background-color:var(--looksgreen);
+    grid-area:education3;
+}
+
+#skillset1{
+    background-color:var(--looksgreen);
+    grid-area:skillset1;
+}
+#skillset2{
+    background-color:var(--looksgreen);
+    grid-area:skillset2;
+}
+#skillset3{
+    background-color:var(--looksgreen);
+    grid-area:skillset3;
+}
+#skillset4{
+    background-color:var(--looksgreen);
+    grid-area:skillset4;
+}
+#skillset5{
+    background-color:var(--looksgreen);
+    grid-area:skillset5;
+}
+#skillset6{
+    background-color:var(--looksgreen);
+    grid-area:skillset6;
+}
+#pro_title{
+    background-color:var(--looksgreen);
+    grid-area:pro_title;
+    font-size: xx-large;
+    left: 0px;
+    text-align:center;
+    position:relative;
+}
+
+#project1{
+    background-color:var(--looksgreen);
+    grid-area:project1;
+}
+#project2{
+    background-color:var(--looksgreen);
+    grid-area:project2;
+}
+#project3{
+    background-color:var(--looksgreen);
+    grid-area:project3;
+}
+#experience{
+    background-color:var(--looksgreen);
+    grid-area:experience;
+}
+#footer{
+    background-color:var(--white);
+    grid-area:footer;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+
+.images_footer{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    
+    margin-top: 10px;
+    }
+    #gmail{
+        right: 28px;
+    }
+    #linkedin{
+        right: 68px;
+
+    }
+@media only screen and (max-width:500px){
+    .container{
+        background-color:green;
+        grid-template-columns: 1fr;
+grid-template-rows: 0.2fr 0.01fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
+grid-template-areas: "nav"
+"name"
+"image"
+"landing_page"
+"education1"
+"education2"
+"education3"
+"skill_title"
+"skillset1"
+"skillset2"
+"skillset3"
+"skillset4"
+"skillset5"
+"skillset6"
+"pro_title"
+"project1"
+"project2"
+"project3"
+"experience"
+"footer";
+    }
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .topnav a.icon {
+        display: block;
+        float: left;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a {
+        text-align: left;
+        float: none;
+        display: block;
+        top: 14px;
+        position: relative;
+    }
+
+    img{
+    position: absolute;
+    height: 350px;
+    width: 300px;
+    border-radius: 210px;
+    left: 50px;
+    top: 128px;
+    }
+    #landing_page{
+        padding: 2rem;
+        font-size: larger;
+    }
+    .eduDiv{
+        top:0px;
+    }
+    #schooling{
+        top:4px;
+    }
+    #name{
+        left: 0px;
+    }
+    #image{
+        display:none;
+    }
+}
